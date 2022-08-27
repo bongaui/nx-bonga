@@ -6,6 +6,13 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BongaButton {
+        /**
+          * This attributes determines the background and border color of the button. By default, buttons have a solid background unless the button is inside of a toolbar, in which case it has a transparent background.
+         */
+        "color"?: 'primary' | 'secondary' | 'tertiary';
+        "expand"?: 'block' | 'full';
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +29,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLBongaButtonElement extends Components.BongaButton, HTMLStencilElement {
+    }
+    var HTMLBongaButtonElement: {
+        prototype: HTMLBongaButtonElement;
+        new (): HTMLBongaButtonElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +42,18 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "bonga-button": HTMLBongaButtonElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface BongaButton {
+        /**
+          * This attributes determines the background and border color of the button. By default, buttons have a solid background unless the button is inside of a toolbar, in which case it has a transparent background.
+         */
+        "color"?: 'primary' | 'secondary' | 'tertiary';
+        "expand"?: 'block' | 'full';
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +69,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "bonga-button": BongaButton;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +77,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "bonga-button": LocalJSX.BongaButton & JSXBase.HTMLAttributes<HTMLBongaButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
