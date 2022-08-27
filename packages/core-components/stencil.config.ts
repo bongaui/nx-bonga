@@ -28,13 +28,6 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
 
-    reactOutputTarget({
-      componentCorePackage: '@bongaui/core-components',
-      proxiesFile:
-        '../../../packages/core-components-react/src/generated/components.ts',
-      includeDefineCustomElements: true,
-    }),
-
     angularOutputTarget({
       componentCorePackage: '@bongaui/core-components',
       directivesProxyFile:
@@ -42,6 +35,13 @@ export const config: Config = {
       directivesArrayFile:
         '../../../packages/core-components-angular/src/generated/directives/index.ts',
       valueAccessorConfigs: angularValueAccessorBindings,
+    }),
+
+    reactOutputTarget({
+      componentCorePackage: '@bongaui/core-components',
+      proxiesFile:
+        '../../../packages/core-components-react/src/generated/components.ts',
+      includeDefineCustomElements: true,
     }),
   ],
 };
