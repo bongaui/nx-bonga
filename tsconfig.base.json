@@ -14,7 +14,19 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@bongaui/core-components": ["dist/libs/core-components"],
+      "@bongaui/core-components-angular": [
+        "packages/core-components-angular/src/index.ts"
+      ],
+      "@bongaui/core-components-react": [
+        "packages/core-components-react/src/index.ts"
+      ],
+      "@bongaui/core-components/*": [
+        "dist/libs/core-components/dist/components/*"
+      ],
+      "@bongaui/core-components/loader": ["dist/libs/core-components/loader"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
