@@ -1,6 +1,6 @@
 {
   "name": "@bongaui/core-components",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
   "es2015": "./dist/esm/index.mjs",
@@ -12,5 +12,6 @@
   "files": [
     "dist/",
     "loader/"
-  ]
+  ],
+  "gitHead": "87b0812856659bb800eb32e4f6957e21c99468ee"
 }
