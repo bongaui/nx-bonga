@@ -15,17 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bongaui/core-components": ["dist/libs/core-components"],
-      "@bongaui/core-components-angular": [
+      "@nx-stencil/core-components": ["dist/libs/core-components"],
+      "@nx-stencil/core-components-angular": [
         "packages/core-components-angular/src/index.ts"
       ],
-      "@bongaui/core-components-react": [
+      "@nx-stencil/core-components-react": [
         "packages/core-components-react/src/index.ts"
       ],
-      "@bongaui/core-components/*": [
+      "@nx-stencil/core-components/*": [
         "dist/libs/core-components/dist/components/*"
       ],
-      "@bongaui/core-components/loader": ["dist/libs/core-components/loader"]
+      "@nx-stencil/core-components/loader": ["dist/libs/core-components/loader"]
     }
   },
   "exclude": ["node_modules", "tmp"]

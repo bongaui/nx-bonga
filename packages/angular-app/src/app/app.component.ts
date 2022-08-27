@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'bongaui-root',
+  selector: 'nx-stencil-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
