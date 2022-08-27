@@ -1,6 +1,11 @@
 {
-  "packages": ["core-components", "core-components-react"],
+  "packages": [
+    "core-components",
+    "core-components-react"
+  ],
   "version": "independent",
   "access": "public",
-  "useNx": true
+  "useNx": true,
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "useWorkspaces": false
 }
