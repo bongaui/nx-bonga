@@ -29,14 +29,14 @@ export const config: Config = {
     },
 
     reactOutputTarget({
-      componentCorePackage: '@nx-stencil/core-components',
+      componentCorePackage: '@bongaui/core-components',
       proxiesFile:
         '../../../packages/core-components-react/src/generated/components.ts',
       includeDefineCustomElements: true,
     }),
 
     angularOutputTarget({
-      componentCorePackage: '@nx-stencil/core-components',
+      componentCorePackage: '@bongaui/core-components',
       directivesProxyFile:
         '../../../packages/core-components-angular/src/generated/directives/proxies.ts',
       directivesArrayFile:

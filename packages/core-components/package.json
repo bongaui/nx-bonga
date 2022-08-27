@@ -1,5 +1,5 @@
 {
-  "name": "@nx-stencil/core-components",
+  "name": "@bongaui/core-components",
   "version": "0.0.1",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
