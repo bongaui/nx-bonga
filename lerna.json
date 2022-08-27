@@ -1,7 +1,7 @@
 {
   "packages": [
-    "core-components",
-    "core-components-react"
+    "dist/packages/core-components",
+    "dist/packages/core-components-react"
   ],
   "version": "independent",
   "access": "public",
