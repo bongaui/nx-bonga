@@ -1,0 +1,22 @@
+{
+  "global": {
+    "primary": {
+      "value": "#ca4c00",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#0e5c9f",
+      "type": "color"
+    },
+    "gray": {
+      "value": "#161616",
+      "type": "color"
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
+}
