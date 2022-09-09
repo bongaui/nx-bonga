@@ -1,7 +1,7 @@
 {
   "global": {
     "primary": {
-      "value": "#ca4c00",
+      "value": "#00bbf4",
       "type": "color"
     },
     "secondary": {
@@ -10,6 +10,10 @@
     },
     "gray": {
       "value": "#545454",
+      "type": "color"
+    },
+    "danger": {
+      "value": "#c40000",
       "type": "color"
     }
   },
